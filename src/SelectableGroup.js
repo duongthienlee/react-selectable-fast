@@ -347,6 +347,11 @@ class SelectableGroup extends Component {
     this.setState({ selectionMode: false })
     this.props.onSelectionFinish([...this.selectedItems])
     this.props.onSelectionClear()
+    this.selectbox.setState({
+      isBoxSelecting: false,
+      boxWidth: 0,
+      boxHeight: 0,
+    })
   }
 
   selectAll = () => {
@@ -484,11 +489,6 @@ class SelectableGroup extends Component {
         this.preventEvent(e.target, 'click')
       }
 
-      this.selectbox.setState({
-        isBoxSelecting: false,
-        boxWidth: 0,
-        boxHeight: 0,
-      })
       this.props.onSelectionFinish([...this.selectedItems])
     }
 

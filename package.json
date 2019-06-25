@@ -1,7 +1,7 @@
 {
-  "name": "react-selectable-fast",
-  "version": "2.3.0",
-  "description": "Enable other React components to be selectable by drawing a box with your mouse/touch",
+  "name": "react-selectable-fast-forked",
+  "version": "2.3.1",
+  "description": "Enable other React components to be selectable by drawing a box with your mouse/touch, A forked from git://github.com/valerybugakov/react-selectable-fast.git",
   "repository": {
     "type": "git",
     "url": "git://github.com/valerybugakov/react-selectable-fast.git"
